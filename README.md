@@ -1,3 +1,3 @@
-# Flutz
+# PlanIt
 
 A simple task tracker
