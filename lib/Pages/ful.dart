@@ -11,6 +11,14 @@ class Ful extends StatefulWidget{
 }
 
 class _FulState extends State<Ful> {
+  int count = 0;
+
+  void increase(){
+    setState(() {
+      count++;
+    });
+  }
+
   @override
   Widget build(BuildContext context){
     return Scaffold(
@@ -18,8 +26,17 @@ class _FulState extends State<Ful> {
         title: Text("Stfl widget"),
         centerTitle:  true,
         backgroundColor: Colors.amber[900],
-        ),
-        
+      ),
+
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center ,
+          children: [
+            Text('You cliked ${count} times'),
+            ElevatedButton(onPressed: increase, child: Text('Add')),
+          ]
+        )
+      )  
     );
   }
 }
