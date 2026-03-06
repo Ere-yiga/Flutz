@@ -18,6 +18,11 @@ class _FulState extends State<Ful> {
       count++;
     });
   }
+  void decrease(){
+    setState(() {
+      count--;
+    });
+  }
 
   @override
   Widget build(BuildContext context){
@@ -25,15 +30,20 @@ class _FulState extends State<Ful> {
       appBar: AppBar(
         title: Text("Stfl widget"),
         centerTitle:  true,
-        backgroundColor: Colors.amber[900],
+        backgroundColor: Colors.amber[100],
       ),
 
       body: Center(
         child: Column(
-          mainAxisAlignment: MainAxisAlignment.center ,
+          mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Text('You cliked ${count} times'),
-            ElevatedButton(onPressed: increase, child: Text('Add')),
+            Row(
+              children: [
+                Text('You cliked ${count} times'),
+                ElevatedButton(onPressed: increase, child: Text('Add')),
+                ElevatedButton(onPressed: decrease, child: Text("subtract"))
+              ]
+            ) 
           ]
         )
       )  
