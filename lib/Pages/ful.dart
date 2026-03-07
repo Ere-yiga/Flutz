@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutz/pages/todo.dart';
 
 class Ful extends StatefulWidget{
   const Ful({super.key});
@@ -37,12 +38,19 @@ class _FulState extends State<Ful> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
+              Text('You cliked ${count} times'),
             Row(
+              mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                Text('You cliked ${count} times'),
                 ElevatedButton(onPressed: increase, child: Text('Add')),
                 ElevatedButton(onPressed: decrease, child: Text("subtract"))
               ]
+            ),
+            ElevatedButton(
+              onPressed: (){
+                Navigator.pushNamed(context, '/UserInput');
+              }, 
+              child: Text('Next page'),
             ) 
           ]
         )
