@@ -9,9 +9,11 @@ class UserInput extends StatefulWidget {
 }
 
 class _UserInputState extends State<UserInput> {
-  TextEditingController myController = TextEditingController();
+  TextEditingController nameController = TextEditingController();
+  TextEditingController emailController = TextEditingController();
   greetUser(){
-    print("myController");
+    print(nameController.text);
+    print(emailController.text);
   }
   
   @override
@@ -20,9 +22,8 @@ class _UserInputState extends State<UserInput> {
       body: Center(
         child: Column(
           children: [
-            TextField(
-              controller: myController,
-            ),
+            TextField(controller: nameController, decoration: InputDecoration(labelText: 'name')),
+            TextField(controller: emailController,decoration: InputDecoration(labelText: 'Email')),
             ElevatedButton(onPressed: greetUser, child: Text("Tap"))
           ],
         )
