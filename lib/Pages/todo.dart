@@ -21,6 +21,8 @@ class _UserInputState extends State<UserInput> {
     return Scaffold(
       body: Center(
         child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             TextField(controller: nameController, decoration: InputDecoration(labelText: 'name')),
             TextField(controller: emailController,decoration: InputDecoration(labelText: 'Email')),
