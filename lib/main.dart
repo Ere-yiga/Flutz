@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutz/pages/ful.dart';
-import 'package:flutz/pages/todo.dart';
 import 'try.dart';
 
 void main(){

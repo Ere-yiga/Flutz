@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutz/pages/todo.dart';
 
 class Ful extends StatefulWidget{
   const Ful({super.key});
