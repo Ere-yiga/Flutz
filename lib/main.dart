@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutz/pages/ful.dart';
 import 'package:flutz/pages/todo.dart';
+import 'try.dart';
 
 void main(){
   runApp(MyApp());
@@ -13,7 +14,8 @@ class MyApp extends StatelessWidget{
   Widget build(BuildContext context){
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Ful(),
+      //home: Ful(),
+      home: Trial(),
       routes: {
         '/UserInput': (context) => UserInput(),
       },
