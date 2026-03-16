@@ -13,10 +13,9 @@ class MyApp extends StatelessWidget{
   Widget build(BuildContext context){
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      //home: Ful(),
-      home: Trial(),
+      home: Ful(),
       routes: {
-        '/UserInput': (context) => UserInput(),
+        '/Trial': (context) => Trial(),
       },
     );
   }

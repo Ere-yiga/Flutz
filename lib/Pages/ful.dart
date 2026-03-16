@@ -37,7 +37,7 @@ class _FulState extends State<Ful> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-              Text('You cliked ${count} times'),
+              Text('You cliked $count times'),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
@@ -47,7 +47,7 @@ class _FulState extends State<Ful> {
             ),
             ElevatedButton(
               onPressed: (){
-                Navigator.pushNamed(context, '/UserInput');
+                Navigator.pushNamed(context, '/Trial');
               }, 
               child: Text('Next page'),
             ) 
