@@ -1,3 +1,1 @@
-# PlanIt
-
-A simple task tracker
+Practice on user input, routing.
